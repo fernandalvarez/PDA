@@ -1,16 +1,16 @@
 Proceso parimpar 
-	definir cantidad ,contador, cpares, cimpares Como Entero;
+	definir cantidad ,contador, contadorpares, contadorimpares Como Entero;
 	cantidad=azar(100);
-	cpares=0;
-	cimpares=0;
-	escribir  cantidad;
+	contadorpares=0;
+	contadorimpares=0;
+	escribir cantidad;
 	Para contador <- 1  Hasta cantidad Con Paso 1 Hacer
 		si contador %2==0 entonces
-			cpares=cpares+1;
+			contadorpares=contadorpares+1;
 		Sino
-			cimpares=cimpares+1;
+			contadorimpares=contadorimpares+1;
 		FinSi
 	FinPara
-	escribir cpares,' numeros par';
-	escribir cimpares,' numeros impar';
+	escribir contadorpares, ' numeros par';
+	escribir contadorimpares, ' numeros impar';
 FinProceso
