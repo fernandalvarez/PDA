@@ -14,6 +14,6 @@ Proceso cantidad_letras_nombre
 	Para i<-0 Hasta 4 Con Paso 1 Hacer
 		n_nombre[i]=Longitud(nombre[i]);
 		escribir "su nombre es ",nombre[i];
-		escribir "la cantidad de palabra es ",n_nombre[i]; 
+		escribir "la cantidad de letras es ",n_nombre[i]; 
 	FinPara
 FinProceso

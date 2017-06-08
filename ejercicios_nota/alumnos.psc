@@ -7,7 +7,7 @@ Proceso alumnos
 	aprobados=0;
 	reprobados=0;
 	mayor=0;
-	menor=0;
+	menor=7;
 	Para i<-0 Hasta 9 Con Paso 1 Hacer
 		repetir
 			escribir "Ingrese la nota del alumno ",i+1;
@@ -24,8 +24,15 @@ Proceso alumnos
 				reprobados=reprobados+1;
 			FinSi
 		FinSi
+		si nota[i]> mayor entonces 
+			mayor=nota[i];
+		FinSi
+		si nota[i]<menor entonces 
+			menor=nota[i];
+		FinSi
 	FinPara
 	promedio=acumulador/10;
 	escribir"El promedio del curso es: ",promedio;
 	escribir"La cantidad de alumnos aprobados es: ",aprobados," alumnos reprobados es:", reprobados;
+	escribir "la nota mayor es ", mayor," la nota menor es ",menor;
 FinProceso
